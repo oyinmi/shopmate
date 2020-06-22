@@ -20,7 +20,10 @@ const User = require("../model/User");
 user.post(
     "/signup",
     [
-        check("name", "Please Enter a Valid Name")
+        check("firstname", "Please Enter a Valid Name")
+            .not()
+            .isEmpty(),
+        check("lastname", "Please Enter a Valid Name")
             .not()
             .isEmpty(),
         check("username", "Please Enter a Valid Username")
@@ -40,7 +43,8 @@ user.post(
         }
 
         const {
-            name,
+            firstname,
+            lastname,
             username,
             email,
             password
@@ -56,7 +60,8 @@ user.post(
             }
 
             user = new User({
-                name,
+                firstname,
+                lastname,
                 username,
                 email,
                 password

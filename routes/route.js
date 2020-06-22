@@ -1,7 +1,6 @@
 /* jshint esversion: 6 */
 
 const express = require('express');
-
 const router = express.Router();
 
 //Users Route
@@ -12,5 +11,8 @@ router.use(user);
 const admin = require('./admin');
 router.use(admin);
 
+//Product Route
+const product = require('./product');
+router.use(product);
 
 module.exports = router;

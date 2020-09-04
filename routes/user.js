@@ -8,12 +8,12 @@ const user = express.Router();
 
 const User = require("../model/User");
 
+
 /**
  * @method - POST
  * @param - /signup
  * @description - User SignUp
  */
-
 
 //User Registration
 
@@ -94,6 +94,7 @@ user.post(
 
 
 //User login
+
 user.post(
     "/login",
     [

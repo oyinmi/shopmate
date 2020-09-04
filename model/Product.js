@@ -15,6 +15,12 @@ const ProductSchema = mongoose.Schema(
             trim: true,
             type: Number,
             required: true
+        },
+        quantity: {
+            desc: "Number of same product available",
+            trim: true,
+            type: Number,
+            required: true,
         }
     },    
     {

@@ -8,6 +8,14 @@ const admin = express.Router();
 
 const Admin = require("../model/Admin");
 
+
+/**
+ * @method - POST
+ * @param - /signup
+ * @description - Admin SignUp
+ */
+
+
 //Admin Registration
 
 admin.post(

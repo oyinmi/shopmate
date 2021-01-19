@@ -1,0 +1,14 @@
+{
+  "name": "shopmate",
+  "version": "1.0.0",
+  "description": "An e-commerce app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+  }
+}
